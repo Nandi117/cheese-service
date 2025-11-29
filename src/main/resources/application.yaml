@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.1.219:5432/cheese_db
+    username: authuser
+    password: authpass
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: false
