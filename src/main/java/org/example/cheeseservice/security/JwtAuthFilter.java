@@ -36,7 +36,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
         try {
             Claims claims = jwtService.validate(token);
 
-            // Optionally store user info in request attributes
+
             request.setAttribute("userId", claims.getSubject());
             request.setAttribute("role", claims.get("role"));
 
